@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>KCPASS 온라인 업무관리 시스템</title>
+</head>
+<body>
+<script>
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+if(isChrome){
+	location.replace('/taskManagerView/view.jsp')
+}else{
+	alert("지원하지 않는 브라우저 입니다.\n권장 브라우저: Chrome")
+	window.open("about:blank","_self").close();
+}
+</script>
+</body>
+</html>
